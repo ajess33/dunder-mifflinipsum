@@ -1,0 +1,14 @@
+.header {
+  width: 100%;
+  font-size: 2em;
+  font-family: 'Permanent Marker';
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  text-align: center;
+}
