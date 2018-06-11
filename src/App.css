@@ -12,3 +12,12 @@ form {
   width: 100%;
   text-align: center;
 }
+
+.length {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.length input {
+  width: 30px;
+}
