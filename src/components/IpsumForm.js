@@ -1,3 +1,6 @@
+// TODO:
+// write methods for select buttons
+
 import React from 'react';
 import IpsumText from './IpsumText';
 
@@ -20,16 +23,16 @@ class IpsumForm extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.setState({ ipsumDisplayed: true });
+    this.setState({
+      ipsumDisplayed: true
+    });
     console.log('submitted');
-    console.log(this.state.character);
-    console.log(this.state.paragraphs);
   };
 
   render() {
     return (
       <div className="ipsumForm">
-        <form onSubmit={this.handleSumbit}>
+        <form onSubmit={this.handleSubmit}>
           <p>Select Your Character</p>
           <select
             value={this.state.character}
@@ -54,7 +57,7 @@ class IpsumForm extends React.Component {
           <input type="submit" value="Bibity Boppity Give Me The Zoppity" />
         </form>
         <br />
-        <IpsumText />
+        {this.state.ipsumDisplayed === true && <IpsumText />}
       </div>
     );
   }
