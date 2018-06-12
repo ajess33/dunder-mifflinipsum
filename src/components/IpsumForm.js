@@ -1,8 +1,9 @@
 import React from 'react';
+import IpsumText from './IpsumText';
 
 class IpsumForm extends React.Component {
   state = {
-    character: 'Any',
+    character: 'All',
     paragraphs: 1,
     ipsumDisplayed: false
   };
@@ -18,11 +19,11 @@ class IpsumForm extends React.Component {
   };
 
   handleSubmit = (e) => {
+    e.preventDefault();
+    this.setState({ ipsumDisplayed: true });
     console.log('submitted');
     console.log(this.state.character);
     console.log(this.state.paragraphs);
-    e.preventDefault();
-    e.nativeEvent.stopImmediatePropigation();
   };
 
   render() {
@@ -43,7 +44,7 @@ class IpsumForm extends React.Component {
             <option value="Creed">Creed</option>
           </select>
           <div className="length">
-            <p>How many paragraphs?</p>
+            <p>How Many Paragraphs?</p>
             <input
               onChange={this.handleInputChange}
               name="paragraphLength"
@@ -52,6 +53,8 @@ class IpsumForm extends React.Component {
           </div>
           <input type="submit" value="Bibity Boppity Give Me The Zoppity" />
         </form>
+        <br />
+        <IpsumText />
       </div>
     );
   }
