@@ -57,7 +57,12 @@ class IpsumForm extends React.Component {
           <input type="submit" value="Bibity Boppity Give Me The Zoppity" />
         </form>
         <br />
-        {this.state.ipsumDisplayed === true && <IpsumText />}
+        {this.state.ipsumDisplayed === true && (
+          <IpsumText
+            person={this.state.character}
+            length={this.state.paragraphs}
+          />
+        )}
       </div>
     );
   }

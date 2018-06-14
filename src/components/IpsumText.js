@@ -3,6 +3,9 @@ import Header from './Header';
 import data from '../data.js';
 
 const IpsumText = (props) => {
+  let character = props.person;
+  let paragraphs = props.length;
+
   return (
     <div>
       <Header />
