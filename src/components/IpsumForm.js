@@ -21,19 +21,26 @@ class IpsumForm extends React.Component {
     this.setState({ character: target.value });
   };
 
+  handleReset = (e) => {
+    this.setState({
+      character: 'All',
+      paragraphs: 1,
+      ipsumDisplayed: false
+    });
+  };
+
   handleSubmit = (e) => {
     e.preventDefault();
     this.setState({
       ipsumDisplayed: true
     });
-    console.log('submitted');
   };
 
   render() {
     return (
-      <div className="ipsumForm">
+      <div>
         <form onSubmit={this.handleSubmit}>
-          <p>Select Your Character</p>
+          <p>Select Your Character:</p>
           <select
             value={this.state.character}
             onChange={this.handleSelectChange}
@@ -54,7 +61,13 @@ class IpsumForm extends React.Component {
               type="text"
             />
           </div>
-          <input type="submit" value="Bibity Boppity Give Me The Zoppity" />
+          <hr />
+          <input
+            id="submit"
+            type="submit"
+            value="Bibity Boppity Give Me The Zoppity"
+          />
+          <button onClick={this.handleReset}>Reset</button>
         </form>
         <br />
         {this.state.ipsumDisplayed === true && (

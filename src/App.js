@@ -4,7 +4,7 @@ import Header from './components/Header';
 import IpsumForm from './components/IpsumForm';
 
 const App = () => (
-  <div>
+  <div className="app">
     <Header />
     <IpsumForm />
   </div>

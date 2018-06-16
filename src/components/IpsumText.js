@@ -1,17 +1,18 @@
 import React from 'react';
-import Header from './Header';
 import data from '../data.js';
 
-const IpsumText = (props) => {
-  let character = props.person;
-  let paragraphs = props.length;
-
-  return (
-    <div>
-      <Header />
-      <h2>Hello</h2>
-    </div>
-  );
-};
+class IpsumText extends React.Component {
+  render() {
+    const getRandomQuotes = () => {};
+    let character = this.props.person;
+    let paragraphs = this.props.length;
+    console.log(character, paragraphs, data.quote1);
+    return (
+      <div>
+        <textarea />
+      </div>
+    );
+  }
+}
 
 export default IpsumText;
