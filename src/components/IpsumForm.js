@@ -70,12 +70,11 @@ class IpsumForm extends React.Component {
           <button onClick={this.handleReset}>Reset</button>
         </form>
         <br />
-        {this.state.ipsumDisplayed === true && (
-          <IpsumText
-            person={this.state.character}
-            length={this.state.paragraphs}
-          />
-        )}
+        <IpsumText
+          person={this.state.character}
+          length={this.state.paragraphs}
+          displayed={this.state.ipsumDisplayed}
+        />
       </div>
     );
   }

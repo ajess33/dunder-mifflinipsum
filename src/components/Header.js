@@ -4,7 +4,9 @@ const Header = () => (
   <div className="header">
     <h1>Dunder Mifflinipsum</h1>
     <p>
-      <i>'The Office' Themed Lorem Ipsum Generator</i>
+      <strong>
+        <i>'The Office' Themed Lorem Ipsum Generator</i>
+      </strong>
     </p>
     <hr />
   </div>

@@ -1,5 +1,6 @@
 .app {
   width: 100%;
+  color: #333333;
 }
 
 .header {
@@ -93,4 +94,23 @@ button {
 
 button {
   margin-left: 5px;
+}
+
+.returned-ipsum {
+  text-align: center;
+  height: 30vh;
+}
+
+textarea {
+  border-color: #1467eb;
+  border-radius: 10px;
+  width: 55%;
+  height: 90%;
+  margin-top: 40px;
+}
+
+@media (min-width: 700px) {
+  textarea {
+    width: 700px;
+  }
 }
