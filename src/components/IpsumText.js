@@ -5,16 +5,7 @@ import data from '../data.js';
 // Object.keys(data).length
 
 class IpsumText extends React.Component {
-  state = {
-    value: ''
-  };
-
-  handleValueChange = (e) => {
-    console.log(data.quote1);
-    this.setState({
-      value: data.quote1
-    });
-  };
+  handleValueChange = (e) => {};
 
   render() {
     let character = this.props.person;
@@ -23,7 +14,10 @@ class IpsumText extends React.Component {
 
     return (
       <div className="returned-ipsum">
-        <textarea value={this.state.value} onChange={this.handleValueChange} />
+        <textarea
+          value={this.props.value.quote}
+          onChange={this.handleValueChange}
+        />
       </div>
     );
   }

@@ -3,12 +3,14 @@
 
 import React from 'react';
 import IpsumText from './IpsumText';
+import data from '../data.js';
 
 class IpsumForm extends React.Component {
   state = {
     character: 'All',
     paragraphs: 1,
-    ipsumDisplayed: false
+    // ipsumDisplayed: false,
+    value: ''
   };
 
   handleInputChange = (e) => {
@@ -24,15 +26,16 @@ class IpsumForm extends React.Component {
   handleReset = (e) => {
     this.setState({
       character: 'All',
-      paragraphs: 1,
-      ipsumDisplayed: false
+      paragraphs: 1
+      // ipsumDisplayed: false
     });
   };
 
   handleSubmit = (e) => {
     e.preventDefault();
     this.setState({
-      ipsumDisplayed: true
+      // ipsumDisplayed: true,
+      value: data.quote1
     });
   };
 
@@ -73,7 +76,9 @@ class IpsumForm extends React.Component {
         <IpsumText
           person={this.state.character}
           length={this.state.paragraphs}
-          displayed={this.state.ipsumDisplayed}
+          // displayed={this.state.ipsumDisplayed}
+          handleSubmit={this.handleSubmit}
+          value={this.state.value}
         />
       </div>
     );
