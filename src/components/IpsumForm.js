@@ -1,5 +1,7 @@
 // TODO:
-// write methods for select buttons
+// Add reset logic for form
+// Style random quotes in textarea if more than one
+// Add more quotes
 
 import React from 'react';
 import IpsumText from './IpsumText';
@@ -12,12 +14,18 @@ import quotes from '../quotes.js';
 const results = [];
 
 const filterQuotes = (character, paragraphs) => {
+  let quoteList;
   // TODO: handle All
-  const quoteList = quotes.filter((quote) => {
-    return quote.character === character;
-  });
+  if (character === 'All') {
+    quoteList = quotes;
+    console.log(quoteList);
+  } else {
+    quoteList = quotes.filter((quote) => {
+      return quote.character === character;
+    });
+  }
   for (let i = 0; i < paragraphs; i++) {
-    const item = quoteList[Math.floor(Math.random() * quoteList.length)];
+    let item = quoteList[Math.floor(Math.random() * quoteList.length)];
     results.push(item.quote);
   }
 };
@@ -68,11 +76,11 @@ class IpsumForm extends React.Component {
             name="characterPick"
           >
             <option value="All">All</option>
-            <option value="Michael">Michael</option>
-            <option value="Dwight">Dwight</option>
-            <option value="Jim">Jim</option>
-            <option value="Andy">Andy</option>
-            <option value="Creed">Creed</option>
+            <option value="Michael Scott">Michael Scott</option>
+            <option value="Dwight Shrute">Dwight Shrute</option>
+            <option value="Jim Halpert">Jim Halpert</option>
+            <option value="Andy Bernard">Andy Bernard</option>
+            <option value="Creed Bratton">Creed Bratton</option>
           </select>
           <div className="length">
             <p>How Many Paragraphs?</p>
