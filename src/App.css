@@ -68,6 +68,7 @@ select {
   height: 20px;
   font-size: 1rem;
   box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.08);
+  text-align: center;
 }
 
 hr {
@@ -109,10 +110,16 @@ textarea {
   width: 55%;
   height: 90%;
   margin-top: 40px;
+  padding: 8px;
 }
 
 @media (min-width: 700px) {
   textarea {
     width: 700px;
   }
+}
+
+.returned-ipsum button {
+  margin-top: 10px;
+  width: 80px;
 }

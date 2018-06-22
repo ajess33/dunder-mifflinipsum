@@ -1,12 +1,10 @@
 import React from 'react';
 import data from '../data.js';
 
-// getting length of object
-// Object.keys(data).length
+// reset value
+// e.target.reset()
 
 class IpsumText extends React.Component {
-  handleValueChange = (e) => {};
-
   render() {
     let character = this.props.person;
     let paragraphs = this.props.length;
@@ -14,10 +12,9 @@ class IpsumText extends React.Component {
 
     return (
       <div className="returned-ipsum">
-        <textarea
-          value={this.props.value.quote}
-          onChange={this.handleValueChange}
-        />
+        <textarea value={this.props.value} onChange={this.handleValueChange} />
+        <br />
+        <button>Copy</button>
       </div>
     );
   }

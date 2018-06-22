@@ -3,13 +3,31 @@
 
 import React from 'react';
 import IpsumText from './IpsumText';
-import data from '../data.js';
+import quotes from '../quotes.js';
+
+// =====================
+// HELPERS
+// =====================
+
+const results = [];
+
+const filterQuotes = (character, paragraphs) => {
+  // TODO: handle All
+  const quoteList = quotes.filter((quote) => {
+    return quote.character === character;
+  });
+  for (let i = 0; i < paragraphs; i++) {
+    const item = quoteList[Math.floor(Math.random() * quoteList.length)];
+    results.push(item.quote);
+  }
+};
+
+// =====================
 
 class IpsumForm extends React.Component {
   state = {
     character: 'All',
     paragraphs: 1,
-    // ipsumDisplayed: false,
     value: ''
   };
 
@@ -26,16 +44,16 @@ class IpsumForm extends React.Component {
   handleReset = (e) => {
     this.setState({
       character: 'All',
-      paragraphs: 1
-      // ipsumDisplayed: false
+      paragraphs: null,
+      value: ''
     });
   };
 
   handleSubmit = (e) => {
     e.preventDefault();
+    filterQuotes(this.state.character, this.state.paragraphs);
     this.setState({
-      // ipsumDisplayed: true,
-      value: data.quote1
+      value: results
     });
   };
 
@@ -76,9 +94,9 @@ class IpsumForm extends React.Component {
         <IpsumText
           person={this.state.character}
           length={this.state.paragraphs}
-          // displayed={this.state.ipsumDisplayed}
-          handleSubmit={this.handleSubmit}
           value={this.state.value}
+          handleSubmit={this.handleSubmit}
+          handleReset={this.handleReset}
         />
       </div>
     );
