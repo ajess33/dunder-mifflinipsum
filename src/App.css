@@ -18,7 +18,7 @@
   }
   img {
     width: 700px;
-    height: 200px;
+    height: 180px;
     border-radius: 10px;
   }
 }
@@ -49,6 +49,16 @@ form p {
   margin: 5px;
 }
 
+.form-options {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.form-character {
+  margin: 0 20px 0 0;
+}
+
 select {
   font-size: 1rem;
   padding: 5px;
@@ -58,8 +68,8 @@ select {
 }
 
 .length {
-  margin-top: 20px;
-  margin-bottom: 35px;
+  border-left: 2px solid #1467eb;
+  padding: 0 0 0 20px;
 }
 
 .length input {
@@ -104,22 +114,26 @@ button {
 }
 
 textarea {
+  margin: 0;
   border-color: #1467eb;
   border-radius: 10px;
   width: 55%;
   height: 300px;
   margin-top: 40px;
   padding: 8px;
+  overflow: auto;
   font-family: 'Dosis', sans-serif;
 }
 
 @media (min-width: 700px) {
   textarea {
     width: 700px;
+    margin: 0;
   }
 }
 
 .returned-ipsum button {
   margin-top: 10px;
+  margin-bottom: 10px;
   width: 80px;
 }

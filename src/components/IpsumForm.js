@@ -15,10 +15,8 @@ const results = [];
 
 const filterQuotes = (character, paragraphs) => {
   let quoteList;
-  // TODO: handle All
   if (character === 'All') {
     quoteList = quotes;
-    console.log(quoteList);
   } else {
     quoteList = quotes.filter((quote) => {
       return quote.character === character;
@@ -26,8 +24,9 @@ const filterQuotes = (character, paragraphs) => {
   }
   for (let i = 0; i < paragraphs; i++) {
     let item = quoteList[Math.floor(Math.random() * quoteList.length)];
-    results.push(item.quote);
+    results.push(item.quote + '\n \n');
   }
+  console.log(results);
 };
 
 // =====================
@@ -52,7 +51,7 @@ class IpsumForm extends React.Component {
   handleReset = (e) => {
     this.setState({
       character: 'All',
-      paragraphs: null,
+      paragraphs: 1,
       value: ''
     });
   };
@@ -69,26 +68,31 @@ class IpsumForm extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <p>Select Your Character:</p>
-          <select
-            value={this.state.character}
-            onChange={this.handleSelectChange}
-            name="characterPick"
-          >
-            <option value="All">All</option>
-            <option value="Michael Scott">Michael Scott</option>
-            <option value="Dwight Shrute">Dwight Shrute</option>
-            <option value="Jim Halpert">Jim Halpert</option>
-            <option value="Andy Bernard">Andy Bernard</option>
-            <option value="Creed Bratton">Creed Bratton</option>
-          </select>
-          <div className="length">
-            <p>How Many Paragraphs?</p>
-            <input
-              onChange={this.handleInputChange}
-              name="paragraphLength"
-              type="text"
-            />
+          <div className="form-options">
+            <div className="form-character">
+              <p>Select Your Character:</p>
+              <select
+                value={this.state.character}
+                onChange={this.handleSelectChange}
+                name="characterPick"
+              >
+                <option value="All">All</option>
+                <option value="Michael Scott">Michael Scott</option>
+                <option value="Dwight Schrute">Dwight Schrute</option>
+                <option value="Jim Halpert">Jim Halpert</option>
+                <option value="Andy Bernard">Andy Bernard</option>
+                <option value="Creed Bratton">Creed Bratton</option>
+              </select>
+            </div>
+            <div className="length">
+              <p>How Many Paragraphs?</p>
+              <input
+                onChange={this.handleInputChange}
+                value={this.state.paragraphs}
+                name="paragraphLength"
+                type="text"
+              />
+            </div>
           </div>
           <hr />
           <input
@@ -99,13 +103,7 @@ class IpsumForm extends React.Component {
           <button onClick={this.handleReset}>Reset</button>
         </form>
         <br />
-        <IpsumText
-          person={this.state.character}
-          length={this.state.paragraphs}
-          value={this.state.value}
-          handleSubmit={this.handleSubmit}
-          handleReset={this.handleReset}
-        />
+        <IpsumText value={this.state.value} handleReset={this.handleReset} />
       </div>
     );
   }
