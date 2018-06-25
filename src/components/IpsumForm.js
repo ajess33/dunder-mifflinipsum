@@ -1,6 +1,6 @@
 // TODO:
-// Add reset logic for form
-// Style random quotes in textarea if more than one
+// How to empty results array on reset
+// Fix comma at beginning of each quote
 // Add more quotes
 
 import React from 'react';
@@ -26,7 +26,6 @@ const filterQuotes = (character, paragraphs) => {
     let item = quoteList[Math.floor(Math.random() * quoteList.length)];
     results.push(item.quote + '\n \n');
   }
-  console.log(results);
 };
 
 // =====================
@@ -38,7 +37,7 @@ class IpsumForm extends React.Component {
     value: ''
   };
 
-  handleInputChange = (e) => {
+  handleParagraphChange = (e) => {
     const target = e.target;
     this.setState({ paragraphs: target.value });
   };
@@ -48,7 +47,7 @@ class IpsumForm extends React.Component {
     this.setState({ character: target.value });
   };
 
-  handleReset = (e) => {
+  handleReset = () => {
     this.setState({
       character: 'All',
       paragraphs: 1,
@@ -70,7 +69,7 @@ class IpsumForm extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <div className="form-options">
             <div className="form-character">
-              <p>Select Your Character:</p>
+              <label>Select Your Character:</label>
               <select
                 value={this.state.character}
                 onChange={this.handleSelectChange}
@@ -85,9 +84,9 @@ class IpsumForm extends React.Component {
               </select>
             </div>
             <div className="length">
-              <p>How Many Paragraphs?</p>
+              <label>How Many Paragraphs?</label>
               <input
-                onChange={this.handleInputChange}
+                onChange={this.handleParagraphChange}
                 value={this.state.paragraphs}
                 name="paragraphLength"
                 type="text"
@@ -100,7 +99,6 @@ class IpsumForm extends React.Component {
             type="submit"
             value="Bibity Boppity Give Me The Zoppity"
           />
-          <button onClick={this.handleReset}>Reset</button>
         </form>
         <br />
         <IpsumText value={this.state.value} handleReset={this.handleReset} />

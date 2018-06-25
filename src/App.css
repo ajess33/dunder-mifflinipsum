@@ -34,9 +34,10 @@ h1 {
   margin-bottom: 20px;
 }
 
-p {
+label {
   font-size: 1.2rem;
   font-family: 'Poppins';
+  display: block;
 }
 
 form {
@@ -45,7 +46,7 @@ form {
   padding-top: 10px;
 }
 
-form p {
+form p label {
   margin: 5px;
 }
 
@@ -118,11 +119,12 @@ textarea {
   border-color: #1467eb;
   border-radius: 10px;
   width: 55%;
-  height: 300px;
+  /* height: 300px; */
   margin-top: 40px;
   padding: 8px;
   overflow: auto;
   font-family: 'Dosis', sans-serif;
+  font-size: 1.1rem;
 }
 
 @media (min-width: 700px) {

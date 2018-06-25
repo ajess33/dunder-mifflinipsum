@@ -185,28 +185,34 @@ const quotes = [
     character: 'Michael Scott'
   },
   {
-    quote: '',
-    character: ''
+    quote:
+      'Pizza, great equalizer. Rich people love pizza, poor people love pizza. White people love pizza, black people love pizza. Do black people like pizza?',
+    character: 'Michael Scott'
   },
   {
-    quote: '',
-    character: ''
+    quote:
+      'I live by one rule: No office romances, no way. Very messy, inappropriate... no. But, I live by another rule: Just do it... Nike.',
+    character: 'Michael Scott'
   },
   {
-    quote: '',
-    character: ''
+    quote:
+      "You hear stories about Dunder Mifflin in the 80's, before everybody knew how bad cocaine was. Gyah... man, did they move paper!",
+    character: 'Michael Scott'
   },
   {
-    quote: '',
-    character: ''
+    quote:
+      "When I retire, I don't want to just move to some island somewhere. I want to be the guy who gives it all back. I want it to be like, 'Hey... who donated that hospital wing that's saving so many lives?' 'I don't know. It was anonymous.' 'Well, guess what. It was Michael Scott.' 'But how do you know? It was anonymous.' [pause] 'Because I'm him.'",
+    character: 'Michael Scott'
   },
   {
-    quote: '',
-    character: ''
+    quote:
+      "Do I feel bad about betraying Jim? Not at all. That's the game. Convince him we're in an alliance, get some information, throw him to the wolves. That's politics baby! Get what you can out of someone, then crush them. I think Jim might have learned a very valuable lesson.",
+    character: 'Dwight Schrute'
   },
   {
-    quote: '',
-    character: ''
+    quote:
+      "I'm a deer hunter. I go all the time with my dad. One thing about deer: they have very good vision. One thing about me: I'm better at hiding, than they are at vision.",
+    character: 'Dwight Schrute'
   },
   {
     quote: '',
