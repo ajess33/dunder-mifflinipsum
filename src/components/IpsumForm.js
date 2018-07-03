@@ -1,7 +1,7 @@
 // TODO:
-// How to empty results array on reset (pass results in as prop)
+
+// Am I setting state correcly in handleSubmit? Is it an anti-pattern?
 // Fix comma at beginning of each quote
-// Add more quotes
 
 import React from 'react';
 import IpsumText from './IpsumText';
@@ -11,7 +11,7 @@ import quotes from '../quotes.js';
 // HELPERS
 // =====================
 
-const results = [];
+let results = [];
 
 const filterQuotes = (character, paragraphs) => {
   let quoteList;
@@ -26,6 +26,10 @@ const filterQuotes = (character, paragraphs) => {
     let item = quoteList[Math.floor(Math.random() * quoteList.length)];
     results.push(item.quote);
   }
+};
+
+const resetResults = () => {
+  results = [];
 };
 
 // =====================
@@ -48,6 +52,7 @@ class IpsumForm extends React.Component {
   };
 
   handleReset = () => {
+    resetResults();
     this.setState({
       character: 'All',
       paragraphs: 1,
