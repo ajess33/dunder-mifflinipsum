@@ -1,5 +1,5 @@
 // TODO:
-// How to empty results array on reset
+// How to empty results array on reset (pass results in as prop)
 // Fix comma at beginning of each quote
 // Add more quotes
 
@@ -24,7 +24,7 @@ const filterQuotes = (character, paragraphs) => {
   }
   for (let i = 0; i < paragraphs; i++) {
     let item = quoteList[Math.floor(Math.random() * quoteList.length)];
-    results.push(item.quote + '\n \n');
+    results.push(item.quote);
   }
 };
 

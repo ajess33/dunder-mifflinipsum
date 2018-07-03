@@ -215,8 +215,64 @@ const quotes = [
     character: 'Dwight Schrute'
   },
   {
-    quote: '',
-    character: ''
+    quote:
+      "In the wild, there is no healthcare. In the wild healthcare is 'Ow, I hurt my leg. I can't run. A lion eats me, and I'm dead.' Well, I'm not dead. I'm the lion. You're dead.",
+    character: 'Dwight Schrute'
+  },
+  {
+    quote:
+      "The most sacred thing I do is care... Today I am in charge of picking a great new healthcare plan. Right? That's what this is all about. Does that make me their doctor? Um, yes. Like a specialist.",
+    character: 'Michael Scott'
+  },
+  {
+    quote:
+      "Right now, this is just a job. If I advance any higher in this company then this would be my career. And uh, well, if this were my career, I'd have to throw myself in front of a train.",
+    character: 'Jim Halpert'
+  },
+  {
+    quote:
+      "My proudest moment here was not when I increased profits by 17%, or cut expenditure without losing a single member of staff. No, no no. It was a young Guatamalan guy, first job in the country, hardly spoke a word of English, but he came to me, and said, 'Mr. Scott, will you be, the Godfather to my child?' Wow... wow. Didn't work out in the end. We had to let him go. He sucked.",
+    character: 'Michael Scott'
+  },
+  {
+    quote:
+      "You know what they say about a car wreck, where it's so awful you can't look away? The Dundees are like a car wreck that you want to look away from but you have to stare at it because your boss is making you.",
+    character: 'Pam Beesly'
+  },
+  {
+    quote:
+      "Families grow, and at some point the daddy can't take a bath with the kids anymore. I'm upper management, and it'd be inappropriate for me to take a bath with Pam- as much as I might want to.",
+    character: 'Michael Scott'
+  },
+  {
+    quote:
+      "Toby is in HR, which technically means he works for corporate, so he's really not a part of our family. Also, he's divorced, so he's really not a part of his family.",
+    character: 'Michael Scott'
+  },
+  {
+    quote:
+      "Yes, I've heard 'women and children first', but we do not employ children. We are not a sweatshop, thankfully. And women are equal in the workplace, by law, so if I let them out first... I have a lawsuit on my hands.",
+    character: 'Michael Scott'
+  },
+  {
+    quote:
+      'I come from a long line of fighters, my maternal grandfather was the toughest guy I ever knew. World War II veteran. He killed twenty men and then spent the rest of the war in an Allied prison camp... My father battled blood pressure and obesity all his life... different kind of fight.',
+    character: 'Dwight Schrute'
+  },
+  {
+    quote:
+      "Michael and his jeans... he gets in them, and I'm not exactly sure what happens, but I can tell you he loves the way he looks in those jeans. I know that's why he started casual Fridays.",
+    character: 'Pam Beesly'
+  },
+  {
+    quote:
+      "Today is Thursday, and Dwight thinks it's Friday, and that's what I'll be working on this afternoon.",
+    character: 'Jim Halpert'
+  },
+  {
+    quote:
+      "Reverse psychology is an awesome tool. I don't know if you guys know about it, but, basically, you make someone think the opposite of what you believe. And that tricks them into doing something stupid. Works like a charm.",
+    character: 'Michael Scott'
   },
   {
     quote: '',

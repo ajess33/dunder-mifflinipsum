@@ -15,9 +15,12 @@ class IpsumText extends React.Component {
   };
 
   render() {
+    let results = this.props.value;
+    console.log(results);
+    // const textareaValue = results.join('\n');
     return (
       <div className="returned-ipsum">
-        <TextareaAutoSize className="text-area" value={this.props.value} />
+        <TextareaAutoSize className="text-area" value={results} />
         <br />
         <button onClick={this.copyIpsum}>Copy</button>
         <button onClick={this.props.handleReset}>Reset</button>
