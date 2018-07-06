@@ -136,7 +136,7 @@ const quotes = [
   },
   {
     quote:
-      "You cannot learn from a book [starts tearing out pages from textbook] Replace these pages with life lessons, and then you will have a book that's worth it's weight in gold. I know these are expensive, but the lesson is priceless.",
+      "You cannot learn from a book [starts tearing out pages from textbook]. Replace these pages with life lessons, and then you will have a book that's worth it's weight in gold. I know these are expensive, but the lesson is priceless.",
     character: 'Michael Scott'
   },
   {

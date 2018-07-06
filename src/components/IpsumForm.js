@@ -24,12 +24,12 @@ const filterQuotes = (character, paragraphs) => {
   }
   for (let i = 0; i < paragraphs; i++) {
     let item = quoteList[Math.floor(Math.random() * quoteList.length)];
-    results.push([item.quote + '\n']);
+    results.push(item.quote);
   }
 };
 
 const resetResults = () => {
-  results = '';
+  results = [];
 };
 
 // =====================

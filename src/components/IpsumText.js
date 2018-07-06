@@ -2,7 +2,7 @@ import React from 'react';
 import TextareaAutoSize from 'react-autosize-textarea';
 
 class IpsumText extends React.Component {
-  copyIpsum = (e) => {
+  copyIpsum = () => {
     const copyText = document.querySelector('.text-area');
     copyText.select();
     try {
@@ -16,12 +16,16 @@ class IpsumText extends React.Component {
 
   render() {
     let results = this.props.value;
-    console.log(results);
-    console.log(results.replace('\n', '<br />'));
+
+    const formatQuotes = () => {
+      if (!results) return '';
+      results = results.join('\n \n');
+      return results;
+    };
 
     return (
       <div className="returned-ipsum">
-        <TextareaAutoSize className="text-area" value={results} />
+        <TextareaAutoSize className="text-area" value={formatQuotes()} />
         <br />
         <button onClick={this.copyIpsum}>Copy</button>
         <button onClick={this.props.handleReset}>Reset</button>
