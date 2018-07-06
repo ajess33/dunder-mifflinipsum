@@ -17,7 +17,8 @@ class IpsumText extends React.Component {
   render() {
     let results = this.props.value;
     console.log(results);
-    // const textareaValue = results.join('\n');
+    console.log(results.replace('\n', '<br />'));
+
     return (
       <div className="returned-ipsum">
         <TextareaAutoSize className="text-area" value={results} />
