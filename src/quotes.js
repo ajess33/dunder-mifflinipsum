@@ -275,12 +275,52 @@ const quotes = [
     character: 'Michael Scott'
   },
   {
-    quote: '',
-    character: ''
+    quote:
+      "I am not offended by homosexuality. In the sixties I made love to many, many women, often outdoors in the mud and rain. It's possible a man could've slipped in there. There'd be no way of knowing.",
+    character: 'Creed Bratton'
   },
   {
-    quote: '',
-    character: ''
+    quote: "The Taliban's the worst. Great Heroin, though.",
+    character: 'Creed Bratton'
+  },
+  {
+    quote:
+      "Hey, did one of you tell Stanley that I have asthma, 'cause I don't. If it gets out, they won't let me scuba. If I can't scuba, then what's this all been about? What am I working toward?",
+    character: 'Creed Bratton'
+  },
+  {
+    quote:
+      'Nobody steals from Creed Bratton and gets away with it. The last person to do this disappeared. His name? Creed Bratton',
+    character: 'Creed Bratton'
+  },
+  {
+    quote:
+      "Big Tuna is a super ambitious guy, you know? Cut your throat to get ahead kind of guy, but I mean I'm not threatened by him. I went to Cornell, you ever heard of it. I graduated in four years. I never studied once. I was drunk the whole time, and I sang in the acappella group, 'Here Comes Treble.'",
+    character: 'Andy Bernard'
+  },
+  {
+    quote:
+      "OK. Who put my calculator in Jell-O? Good one. But uh, seriously, guys who did this? Seriously guys, who did this? I need to know who put my calculator in Jell-O, or I'm gonna lose my freaking mind!",
+    character: 'Andy Bernard'
+  },
+  {
+    quote: 'Oh, it is on like a prawn who yawns at dawn.',
+    character: 'Andy Bernard'
+  },
+  {
+    quote:
+      "I'm always one step ahead... like a carpenter... that makes stairs.",
+    character: 'Andy Bernard'
+  },
+  {
+    quote:
+      'I begged Dwight and Jim to give me Erin for Secret Santa. And I decided to give Erin the 12 days of Christmas. Is it my fault that the first eight days is basically 30 birds?',
+    character: 'Andy Bernard'
+  },
+  {
+    quote:
+      'You give me a gift? Bam! Thank You note. You invite me somewhere? Pow! RSVP. You do me a favor? Wham! Favor returned. Do not test my politeness.',
+    character: 'Andy Bernard'
   }
 ];
 

@@ -1,11 +1,10 @@
-// TODO:
-
-// Am I setting state correcly in handleSubmit? Is it an anti-pattern?
-// Fix comma at beginning of each quote
-
 import React from 'react';
 import IpsumText from './IpsumText';
 import quotes from '../quotes.js';
+
+// TODO:
+// Add proptypes
+// Add quote animation
 
 // =====================
 // HELPERS
