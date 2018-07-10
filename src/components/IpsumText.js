@@ -1,5 +1,6 @@
 import React from 'react';
 import TextareaAutoSize from 'react-autosize-textarea';
+import PropTypes from 'prop-types';
 
 class IpsumText extends React.Component {
   copyIpsum = () => {
@@ -33,5 +34,9 @@ class IpsumText extends React.Component {
     );
   }
 }
+
+IpsumText.PropTypes = {
+  value: PropTypes.number.isRequired
+};
 
 export default IpsumText;

@@ -176,7 +176,7 @@ const quotes = [
   },
   {
     quote:
-      "Tonight, one of our most ethnic co-workers, Kelly, has invited us all to a Diwali celebration put on by her community. What is Diwali, you may ask. Well, to have Kelly explain it, ' well, it's, blah blah blah, it's so super, fun, and it's gonna be great!' Lot of gods with unpronouncable names, twenty minutes later, you find out that it is essentially a Hindu Halloween.",
+      "Tonight, one of our most ethnic co-workers, Kelly, has invited us all to a Diwali celebration put on by her community. What is Diwali, you may ask. Well, to have Kelly explain it, ' well, it's, blah blah blah, it's so super, fun, and it's gonna be great!' Lot of gods with unpronounceable names, twenty minutes later, you find out that it is essentially a Hindu Halloween.",
     character: 'Michael Scott'
   },
   {

@@ -88,7 +88,7 @@ class IpsumForm extends React.Component {
               </select>
             </div>
             <div className="length">
-              <label>How Many Paragraphs?</label>
+              <label>Paragraphs:</label>
               <input
                 onChange={this.handleParagraphChange}
                 value={this.state.paragraphs}

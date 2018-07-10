@@ -110,8 +110,7 @@ button {
   font-family: 'Poppins';
 }
 
-#submit,
-button:hover {
+#submit:hover {
   height: 2.2rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 0 6px;
@@ -139,10 +138,10 @@ textarea {
   width: 55%;
   /* height: 300px; */
   margin-top: 40px;
-  padding: 8px;
+  padding: 12px;
   overflow: auto;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 700px) {

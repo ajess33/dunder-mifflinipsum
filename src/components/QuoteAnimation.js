@@ -1,5 +1,9 @@
 import React from 'react';
 
-const QuoteAnimation = () => {};
+const QuoteAnimation = (props) => {
+  <div>
+    <p />
+  </div>;
+};
 
 export default QuoteAnimation;
