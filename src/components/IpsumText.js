@@ -35,8 +35,8 @@ class IpsumText extends React.Component {
   }
 }
 
-IpsumText.PropTypes = {
-  value: PropTypes.number.isRequired
-};
+// IpsumText.propTypes = {
+//   value: PropTypes.number.isRequired
+// };
 
 export default IpsumText;

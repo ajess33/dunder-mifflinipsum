@@ -3,7 +3,6 @@ import IpsumText from './IpsumText';
 import quotes from '../quotes.js';
 
 // TODO:
-// Add proptypes
 // Add quote animation
 
 // =====================
@@ -45,6 +44,16 @@ class IpsumForm extends React.Component {
     this.setState({ paragraphs: target.value });
   };
 
+  handleMinus = (e) => {
+    e.preventDefault();
+    this.setState({ paragraphs: this.state.paragraphs - 1 });
+  };
+
+  handlePlus = (e) => {
+    e.preventDefault();
+    this.setState({ paragraphs: this.state.paragraphs + 1 });
+  };
+
   handleSelectChange = (e) => {
     const target = e.target;
     this.setState({ character: target.value });
@@ -73,7 +82,9 @@ class IpsumForm extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <div className="form-options">
             <div className="form-character">
-              <label>Select Your Character:</label>
+              <label>
+                <strong>Select Your Character:</strong>
+              </label>
               <select
                 value={this.state.character}
                 onChange={this.handleSelectChange}
@@ -88,13 +99,23 @@ class IpsumForm extends React.Component {
               </select>
             </div>
             <div className="length">
-              <label>Paragraphs:</label>
-              <input
-                onChange={this.handleParagraphChange}
-                value={this.state.paragraphs}
-                name="paragraphLength"
-                type="text"
-              />
+              <label>
+                <strong>Paragraphs:</strong>
+              </label>
+              <div className="length-buttons">
+                <button className="button-counter" onClick={this.handleMinus}>
+                  -
+                </button>
+                <input
+                  onChange={this.handleParagraphChange}
+                  value={this.state.paragraphs}
+                  name="paragraphLength"
+                  type="text"
+                />
+                <button className="button-counter" onClick={this.handlePlus}>
+                  +
+                </button>
+              </div>
             </div>
           </div>
           <hr />
