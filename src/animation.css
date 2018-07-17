@@ -1,0 +1,23 @@
+.animation-container {
+  width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.animation-container:hover {
+  transition: opacity 2s ease-in 8s;
+  opacity: 0;
+}
+
+p {
+  text-align: center;
+  color: #333333;
+}
+
+.quote {
+  padding-top: 10px;
+}
+
+.author {
+  padding-bottom: 10px;
+}

@@ -46,7 +46,11 @@ class IpsumForm extends React.Component {
 
   handleMinus = (e) => {
     e.preventDefault();
-    this.setState({ paragraphs: this.state.paragraphs - 1 });
+    if (this.state.paragraphs <= 0) {
+      return;
+    } else {
+      this.setState({ paragraphs: this.state.paragraphs - 1 });
+    }
   };
 
   handlePlus = (e) => {
@@ -79,6 +83,7 @@ class IpsumForm extends React.Component {
   render() {
     return (
       <div>
+        <hr />
         <form onSubmit={this.handleSubmit}>
           <div className="form-options">
             <div className="form-character">
