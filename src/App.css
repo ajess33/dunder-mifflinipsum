@@ -1,5 +1,5 @@
 body {
-  background-color: #f2f2f2;
+  background-color: white;
 }
 
 .app {
@@ -20,7 +20,7 @@ body {
     font-size: 2em;
     font-family: 'Permanent Marker';
   }
-  img {
+  .header img {
     width: 700px;
     height: 180px;
     border-radius: 10px;
@@ -91,7 +91,7 @@ select {
 .button-counter {
   height: 30px;
   width: 30px;
-  padding-left: 9px;
+  padding-left: 6px;
   border: 2px solid #1467eb;
   background-color: #f2f2f2;
   color: #1467eb;
@@ -171,4 +171,16 @@ textarea {
   margin-bottom: 10px;
   width: 80px;
   letter-spacing: 1.5px;
+}
+
+/* ================= */
+/* ICONS */
+/* ================= */
+
+form img {
+  height: 15px;
+  width: 15px;
+  margin-top: 5px;
+  padding-left: 0px;
+  margin-left: 0px;
 }

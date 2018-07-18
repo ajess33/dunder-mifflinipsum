@@ -1,6 +1,8 @@
 import React from 'react';
 import IpsumText from './IpsumText';
 import quotes from '../quotes.js';
+import addLogo from '../add.svg';
+import subtractLogo from '../subtract.svg';
 
 // TODO:
 // Add quote animation
@@ -35,7 +37,7 @@ const resetResults = () => {
 class IpsumForm extends React.Component {
   state = {
     character: 'All',
-    paragraphs: 1,
+    paragraphs: 3,
     value: ''
   };
 
@@ -109,7 +111,7 @@ class IpsumForm extends React.Component {
               </label>
               <div className="length-buttons">
                 <button className="button-counter" onClick={this.handleMinus}>
-                  -
+                  <img src={subtractLogo} alt="subtraction symbol" />
                 </button>
                 <input
                   onChange={this.handleParagraphChange}
@@ -118,7 +120,7 @@ class IpsumForm extends React.Component {
                   type="text"
                 />
                 <button className="button-counter" onClick={this.handlePlus}>
-                  +
+                  <img src={addLogo} alt="addition symbol" />
                 </button>
               </div>
             </div>

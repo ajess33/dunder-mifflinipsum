@@ -4,14 +4,14 @@
   opacity: 0.9;
 }
 
-.animation-container:hover {
+/* .animation-container:active {
   transition: opacity 2s ease-in 8s;
   opacity: 0;
-}
+} */
 
 p {
   text-align: center;
-  color: #333333;
+  color: #d6cb04;
 }
 
 .quote {

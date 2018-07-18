@@ -15,6 +15,7 @@ class QuoteAnimation extends React.Component {
   };
 
   componentDidMount() {
+    this.interval = this.randomQuote();
     this.interval = setInterval(() => this.randomQuote(), 8000);
   }
 
