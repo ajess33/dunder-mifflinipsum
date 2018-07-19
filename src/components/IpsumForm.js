@@ -69,7 +69,7 @@ class IpsumForm extends React.Component {
     resetResults();
     this.setState({
       character: 'All',
-      paragraphs: 1,
+      paragraphs: 3,
       value: ''
     });
   };
