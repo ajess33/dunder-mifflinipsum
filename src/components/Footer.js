@@ -1,8 +1,9 @@
 import React from 'react';
+import '../animation.css';
 
 const Footer = () => {
   return (
-    <div>
+    <div className="footer">
       <p>copyright 2018</p>
       <p>
         <div>

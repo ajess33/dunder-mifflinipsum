@@ -47,6 +47,35 @@ const shortQuotes = [
     quote:
       "There is nothing more insulting to a great salesman than having to listen to a bad salesman. It's like a great basketball player having to listen to a bad basketball player.",
     character: 'Michael Scott'
+  },
+  {
+    quote: 'I should have burned this place down when I had the chance.',
+    character: 'Michael Scott'
+  },
+  {
+    quote: 'Dwight, you ignorant slut!',
+    character: 'Michael Scott'
+  },
+  {
+    quote: "If I can't scuba then what's this all been about?",
+    character: 'Creed Bratton'
+  },
+  {
+    quote: 'Bears. Beets. Battlestar Galactica.',
+    character: 'Jim Halpert'
+  },
+  {
+    quote:
+      "Toby Flenderson is everything that's wrong with the paper business.",
+    character: 'Michael Scott'
+  },
+  {
+    quote: 'I declare BANKRUPTCY!',
+    character: 'Michael Scott'
+  },
+  {
+    quote: 'I am Beyonce, always.',
+    character: 'Michael Scott'
   }
 ];
 

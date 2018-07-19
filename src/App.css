@@ -1,5 +1,6 @@
 body {
   background-color: white;
+  padding-bottom: 60px;
 }
 
 .app {
@@ -183,4 +184,9 @@ form img {
   margin-top: 5px;
   padding-left: 0px;
   margin-left: 0px;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 40px;
 }

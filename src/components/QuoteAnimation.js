@@ -23,7 +23,9 @@ class QuoteAnimation extends React.Component {
     return (
       <div className="animation-container">
         <p className="quote">{this.state.quote.quote}</p>
-        <p className="author">- {this.state.quote.character}</p>
+        <em>
+          <p className="author">- {this.state.quote.character}</p>
+        </em>
       </div>
     );
   }

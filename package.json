@@ -12,10 +12,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^2.9.0"
+    "eslint-config-prettier": "^2.9.0",
+    "gh-pages": "^1.2.0"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
@@ -28,5 +30,5 @@
   "bugs": {
     "url": "https://github.com/ajess33/the-office-ipsum/issues"
   },
-  "homepage": "https://github.com/ajess33/the-office-ipsum#readme"
+  "homepage": "https://ajess33.github.io/dunder-mifflinipsum"
 }
