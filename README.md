@@ -1,7 +1,7 @@
 # Dunder-MifflinIpsum
 'The Office' themed Lorem Ipsum Generator
 
-(Dunder-MifflinIpsum)[https://ajess33.github.io/dunder-mifflinipsum/]
+https://ajess33.github.io/dunder-mifflinipsum/
 
 Built with React
 
