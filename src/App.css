@@ -24,7 +24,7 @@ body {
   .header img {
     width: 700px;
     height: 180px;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 }
 
@@ -32,7 +32,7 @@ h1 {
   display: flex;
   text-align: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   background-color: #1467eb;
   margin-top: 20px;
@@ -92,11 +92,9 @@ select {
 .button-counter {
   height: 30px;
   width: 30px;
-  padding-left: 6px;
-  border: 2px solid #1467eb;
-  background-color: #f2f2f2;
-  color: #1467eb;
+  padding-left: 7px;
   margin: 4px;
+  background: white;
 }
 
 hr {
@@ -113,11 +111,11 @@ form hr {
 #submit,
 button {
   height: 2.2rem;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: 2px solid #1467eb;
   box-shadow: rgba(0, 0, 0, 0.4) 0 0 6px;
-  color: white;
-  background-color: #1467eb;
-  border: none;
+  color: #1467eb;
+  background-color: white;
   cursor: pointer;
   font-size: 0.9rem;
   font-family: 'Poppins';
@@ -125,21 +123,22 @@ button {
 }
 
 button {
+  background-color: transparent;
+  border: 2px solid #1467eb;
+  color: #1467eb;
   margin-left: 5px;
 }
 
 button:hover {
   cursor: pointer;
-  background-color: transparent;
-  border: 2px solid #1467eb;
-  color: #1467eb;
+  color: white;
+  background: #1467eb;
 }
 
 #submit:hover {
   cursor: pointer;
-  background-color: transparent;
-  border: 2px solid #1467eb;
-  color: #1467eb;
+  background: #1467eb;
+  color: white;
 }
 
 .returned-ipsum {
@@ -150,7 +149,7 @@ button:hover {
 textarea {
   margin: 0;
   border-color: #1467eb;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 55%;
   /* height: 300px; */
   margin-top: 40px;
