@@ -5,4 +5,4 @@ https://ajess33.github.io/dunder-mifflinipsum/
 
 Built with React
 
-![screenshot](/dunderScreenshot.png)
+![screenshot](/dunder-mifflinipsum.png)
